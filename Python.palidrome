@@ -1,0 +1,16 @@
+# check_palindrome.py - Hacktoberfest 2025 Contribution
+
+def is_palindrome(text):
+    """Checks if a given string is a palindrome (reads same backward as forward)."""
+    # Remove spaces and convert to lowercase for accurate check
+    text = text.replace(" ", "").lower()
+    
+    # Check if the string is equal to its reverse
+    return text == text[::-1]
+
+# Example usage
+string1 = "madam"
+string2 = "Hello"
+
+print(f"'{string1}' is palindrome: {is_palindrome(string1)}")
+print(f"'{string2}' is palindrome: {is_palindrome(string2)}")
